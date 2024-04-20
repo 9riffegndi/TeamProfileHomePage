@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: black;
   font-family: "Poppins", sans-serif;
 }
 
@@ -16,20 +17,88 @@
   position: relative;
   text-decoration: none;
   font-size: 50px;
-  right: 20px;
-  bottom: 110px;
+  left: 100px;
+  bottom: 111px;
+}
+
+.foto-logo {
+  position: absolute;
+  width: 350px;
+  left: 10px;
+  top: 0;
+  border-radius: 62px 0px 53px 66px;
+
 }
 
 .nav-links {
   position: relative;
   display: flex;
-  gap: 20px;
+  gap: 50px;
   justify-content: center;
   list-style: none;
-  margin-left: 250px;
-  bottom: 160px;
+  bottom: 80px;
+;
 }
 .nav-links a {
   text-decoration: none;
   font-size: 20px;
+}
+
+.container-ourstory {
+  position: absolute;
+  width: 500px;
+  left: 500px;
+  top: 200px;
+}
+
+.judul-ourstory {
+  text-align: center;
+}
+
+.deskripsi-ourstory {
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  
+}
+
+.card-image {
+  position: relative;
+  width: 260px;
+  height: 240px;
+  top: 150px;
+  left: 30px;
+  filter: grayscale(100%);
+  box-shadow: rgb(33, 33, 33) 20px 10px 10px 0px ;
+}
+
+.card-title {
+  position: relative;
+  text-align: center;
+  top: 440px;
+  right: 140px;
+  margin-bottom: 200px;
+}
+
+.card-description {
+  position: relative;
+  text-align: center;
+  top: 550px;
+  right: 250px;
+
+}
+
+.container-figure {
+  position: relative;
+  color: black;
+  width: 200px;
+  text-align: center;
+  background-color: whitesmoke;
+  margin-left: 645px;
+  top: 60px;
+  border-radius: 20px   0px ;
+  box-shadow: black 10px 10px 20px 0px;
 }
