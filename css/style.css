@@ -4,21 +4,41 @@
   box-sizing: border-box;
   color: black;
   font-family: "Poppins", sans-serif;
+  object-fit: contain;
+}
+
+body {
+  --sb-track-color: transparent;
+  --sb-thumb-color: yellow;
+  --sb-size: 7px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 24px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 24px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
 }
 
 .container {
   background-color: whitesmoke;
   padding: 160px;
-  border-bottom-right-radius: 250px;
+  border-bottom-right-radius: 200px;
   box-shadow: black 1px 1px 30px 0px;
-}
-
-.logo {
-  position: relative;
-  text-decoration: none;
-  font-size: 50px;
-  left: 100px;
-  bottom: 111px;
+  object-fit: contain;
 }
 
 .foto-logo {
@@ -27,7 +47,7 @@
   left: 10px;
   top: 0;
   border-radius: 62px 0px 53px 66px;
-
+  object-fit: contain;
 }
 
 .nav-links {
@@ -37,68 +57,201 @@
   justify-content: center;
   list-style: none;
   bottom: 80px;
-;
+  object-fit: contain;
 }
 .nav-links a {
   text-decoration: none;
   font-size: 20px;
+  object-fit: contain;
 }
 
 .container-ourstory {
-  position: absolute;
-  width: 500px;
-  left: 500px;
-  top: 200px;
+  position: relative;
+  padding: 50px;
+  margin-top: 110px;
+  align-items: center;
+  object-fit: contain;
 }
 
 .judul-ourstory {
   text-align: center;
+  object-fit: contain;
 }
 
 .deskripsi-ourstory {
   text-align: center;
+  object-fit: contain;
+}
+
+.judul-figure {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  object-fit: contain;
+  width: 25%;
+  height: auto;
 }
 
 .card {
   position: relative;
   display: flex;
-  
+  justify-content: center;
+  gap: 100px;
+
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card2 {
+  position: relative;
+  top: -20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
 }
 
 .card-image {
   position: relative;
-  width: 260px;
-  height: 240px;
-  top: 150px;
-  left: 30px;
+  object-fit: contain;
+  width: 25%;
+  height: auto;
   filter: grayscale(100%);
-  box-shadow: rgb(33, 33, 33) 20px 10px 10px 0px ;
+  border-radius: 0px 2px 0px 0px;
+  margin: 10px;
+  box-shadow: rgb(189, 189, 189) 1px 1px 10px 1px;
+} 
+
+.card-image {
+  transition: filter 1.2s ease;
 }
 
-.card-title {
-  position: relative;
-  text-align: center;
-  top: 440px;
-  right: 140px;
-  margin-bottom: 200px;
+.card-image:hover {
+  filter: none;
 }
 
-.card-description {
-  position: relative;
-  text-align: center;
-  top: 550px;
-  right: 250px;
+.home {
+  transition: transform 0.3s ease;
+}
 
+.home:hover {
+  transform: scale(1.2);
+  text-decoration: underline;
+  text-decoration-color: yellow;
+}
+
+.vandm {
+  transition: transform 0.3s ease;
+}
+
+.vandm:hover {
+  transform: scale(1.2);
+  text-decoration: underline;
+  text-decoration-color: yellow;
+}
+
+.project {
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.2);
+  text-decoration: underline;
+  text-decoration-color: yellow;
+}
+
+.contact {
+  transition: transform 0.3s ease;
+}
+
+.contact:hover {
+  transform: scale(1.2);
+  text-decoration: underline;
+  text-decoration-color: yellow;
 }
 
 .container-figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 90px;
+}
+
+.container-nama {
   position: relative;
-  color: black;
-  width: 200px;
+  width: 100%;
+  display: flex;
   text-align: center;
-  background-color: whitesmoke;
-  margin-left: 645px;
-  top: 60px;
-  border-radius: 20px   0px ;
-  box-shadow: black 10px 10px 20px 0px;
+  justify-content: center;
+  gap: 120px;
+  margin-bottom: 10px;
+}
+
+.container-nama2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 120px;
+  top: -20px;
+  border-radius: 0px 0px 30px 30px;
+}
+
+.nama-anggota {
+  background-color: white;
+  box-shadow: black 0px 10px 5px 0px;
+  position: relative;
+  object-fit: contain;
+  width: 25%;
+  height: auto;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 60px;
+  text-decoration: none;
+  border-radius: 0px;
+  padding: 20px 0px;
+  bottom: 30px;
+  box-shadow: rgb(189, 189, 189) 1px 1px 10px 1px;
+  border-radius: 0px 0px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nama-anggota2 {
+  background-color: white;
+  box-shadow: black 0px 10px 5px 0px;
+  position: relative;
+  object-fit: contain;
+  width: 25%;
+  height: auto;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 60px;
+  text-decoration: none;
+  border-radius: 0px;
+  padding: 20px 0px;
+  bottom: 30px;
+  box-shadow: rgb(189, 189, 189) 1px 1px 10px 1px;
+  border-radius: 0px 0px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.media-sosial {
+  display: flex;
+}
+
+.no-underline {
+  text-decoration: none;
+  gap: 20px;
+  font-size: smaller;
+  margin: 10px;
+}
+
+.t-m {
+  margin-top: 5px;
 }
