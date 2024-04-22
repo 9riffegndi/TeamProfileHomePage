@@ -1,8 +1,10 @@
 # TeamProfileHomePage
 MINI PROJECT WEB PROFILE SEDERHANA
 
-# DEFAULT CHROME SIZE 80% NOT RESPONSIVE WEB
-GUNAKAN 
+# DEFAULT CHROME SIZE 100% NOT RESPONSIVE WEB
+setting default web
+
+
 # Team Profile Home Page
 
 Ini adalah proyek web untuk membuat halaman home page yang menampilkan profil tim.
